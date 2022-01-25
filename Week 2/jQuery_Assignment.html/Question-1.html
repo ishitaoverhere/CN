@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+</head>
+<body>
+    <h2>
+        <span class="cow_color">Blue</span> Cow by Gelett Burgess (published in The Lark, 1895)
+      </h2>
+      <p>
+        I never saw a <span class="cow_color">Blue</span> Cow, I never hope to see one; But I can tell you, anyhow, I'd rather see than be one.
+      </p>
+      <p>
+        Change the cow's color to:
+        <select id="input_color">
+          <option value="Purple">Purple</option>
+          <option value="Green">Green</option>
+          <option value="Red">Red</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Teal">Teal</option>
+        </select>
+        <button id="button_change" onclick="changeColor()">Change!</button>
+      </p>
+</body>
+<script>
+    function changeColor() {
+        var inputValue = document.querySelector('#input_color'),
+        cowColor = document.querySelectorAll('.cow_color');
+        cowColor.forEach(el => el.innerHTML = inputValue.value);
+    }
+</script>
+</html>

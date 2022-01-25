@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-7</title>
+    <style>
+        p {
+          color: black;
+          background: #EEF4ED;
+          font-weight: bold;
+        }
+     </style>
+</head>
+<body>
+    <button>Click to hide the following paragraphs</button>
+    <p>jQuery</p>
+    <p>jQuery Exercises</p>
+</body>
+<script>
+    $( "button" ).click(function() {
+        $( "p" ).hide(3000);
+    });
+
+</script>
+</html>
